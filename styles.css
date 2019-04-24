@@ -60,7 +60,7 @@ main {
 }
 
 #navbar li {
-  height: 65px;
+  /*height: 65px;*/
   list-style: none;
   border-bottom: 1px solid var(--color-white);
   padding-left: 16px;
@@ -73,6 +73,7 @@ main {
 .nav-link {
   background: var(--color-black);
   color: var(--color-white);
+  font-size: 75%;
 }
 
 #navbar li a:link,

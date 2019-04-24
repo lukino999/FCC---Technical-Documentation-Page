@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width"/>
+  <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" type="text/css" href="./styles.css">
   <title>HTML and accessibility</title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism.min.css">
@@ -22,7 +22,7 @@
         <li><a class="nav-link" href="#Text_content">Text content</a></li>
         <li><a class="nav-link" href="#Page_layouts">Page layouts</a></li>
         <li><a class="nav-link" href="#UI_controls">UI controls</a></li>
-        <li><a class="nav-link"href="#Building_keyboard_accessibility_back_in">Building keyboard accessibility back in</a></li>
+        <li><a class="nav-link" href="#Building_keyboard_accessibility_back_in">Building keyboard accessibility back in</a></li>
         <li><a class="nav-link" href="#Meaningful_text_labels">Meaningful text labels</a></li>
         <li><a class="nav-link" href="#Reference">Reference</a></li>
       </ul>
@@ -33,7 +33,9 @@
         <header>
           <h2>Overview</h2>
         </header>
-        <p>Learning some HTML, CSS, and JavaScript is useful if you want to become a web developer, but your knowledge needs to go further than just using the technologies — you need to use them responsibly so that you maximize the audience for your websites and don't lock anyone out of using them. To achieve this, you need to adhere to general best practices (which are demonstrated throughout the <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank">HTML</a>, <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS" target="_blank">CSS</a>, and <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript" target="_blank">JavaScript</a> topics), do cross browser testing, and consider accessibility from the start. In this module, we'll cover the latter in detail.</p>
+        <p>Learning some HTML, CSS, and JavaScript is useful if you want to become a web developer, but your knowledge needs to go further than just using the technologies — you need to use them responsibly so that you maximize the audience for your websites
+          and don't lock anyone out of using them. To achieve this, you need to adhere to general best practices (which are demonstrated throughout the <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank">HTML</a>, <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS" target="_blank">CSS</a>, and <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript" target="_blank">JavaScript</a> topics), do cross browser testing, and consider accessibility from the start. In this module, we'll cover the latter
+          in detail.</p>
         <p>A great deal of web content can be made accessible just by making sure the correct Hypertext Markup Language elements are used for the correct purpose at all times. This article looks in detail at how HTML can be used to ensure maximum accessibility.
         </p>
         <p>
@@ -51,8 +53,10 @@
         <header>
           <h2>HTML and accessibility</h2>
         </header>
-        <p>As you learn more about HTML — read more resources, look at more examples, etc. — you'll keep seeing a common theme: the importance of using semantic HTML (sometimes called POSH, or Plain Old Semantic HTML). This means using the correct HTML elements for their correct purpose as much as possible.</p>
-        <p>You might wonder why this is so important. After all, you can use a combination of CSS and JavaScript to make just about any HTML element behave in whatever way you want. For example, a control button to play a video on your site could be marked up like this:</p>
+        <p>As you learn more about HTML — read more resources, look at more examples, etc. — you'll keep seeing a common theme: the importance of using semantic HTML (sometimes called POSH, or Plain Old Semantic HTML). This means using the correct HTML elements
+          for their correct purpose as much as possible.</p>
+        <p>You might wonder why this is so important. After all, you can use a combination of CSS and JavaScript to make just about any HTML element behave in whatever way you want. For example, a control button to play a video on your site could be marked
+          up like this:</p>
         <pre class="badCode"><code>&lt;div&gt;Play video&lt;/div&gt;</code></pre>
         <p>
           But as you'll see in greater detail later on, it makes much sense to use the correct element for the job:</p>
@@ -75,8 +79,10 @@
           <h2>Good semantics</h2>
         </header>
         <p>We've already talked about the importance of good semantics, and why we should use the right HTML element for the right job. This cannot be ignored, as it is one of the main places that accessibility is badly broken if not handled properly.</p>
-        <p>Out there on the web, the truth is that people do some very strange things with HTML markup. Some abuses of HTML are due to legacy practices that have not been completely forgotten, and some are just plain ignorance. Whatever the case, you should replace such bad code wherever you see it, whenever you can.</p>
-        <p>Sometimes you are not always in the position to get rid of bad markup — your pages might be generated by some kind of server-side framework that you don't have full control over, or you might have third party content on your page (such as ad banners) that you don't have control over.</p>
+        <p>Out there on the web, the truth is that people do some very strange things with HTML markup. Some abuses of HTML are due to legacy practices that have not been completely forgotten, and some are just plain ignorance. Whatever the case, you should
+          replace such bad code wherever you see it, whenever you can.</p>
+        <p>Sometimes you are not always in the position to get rid of bad markup — your pages might be generated by some kind of server-side framework that you don't have full control over, or you might have third party content on your page (such as ad banners)
+          that you don't have control over.</p>
         <p>The goal isn't "all or nothing", however — every improvement you are able to make will help the cause of accessibility.</p>
       </section>
       <hr>
@@ -105,7 +111,8 @@
 &lt;h2&gt;My 2nd subheading&lt;/h2&gt;
 
 &lt;p&gt;This is the second subsection of my content. I think is more interesting than the last one.&lt;/p&gt;</code></pre>
-        <p>We've prepared a version with longer text for you to try out with a screenreader (see <a href="http://mdn.github.io/learning-area/accessibility/html/good-semantics.html" target="_blank">good-semantics.html</a>). If you try navigating through this, you'll see that this is pretty easy to navigate:</p>
+        <p>We've prepared a version with longer text for you to try out with a screenreader (see <a href="http://mdn.github.io/learning-area/accessibility/html/good-semantics.html" target="_blank">good-semantics.html</a>). If you try navigating through this,
+          you'll see that this is pretty easy to navigate:</p>
         <ol>
           <li>The screenreader reads each header out as you progress through the content, notifying you what is a heading, what is a paragraph, etc.</li>
           <li>It stops after each element, letting you go at whatever pace is comfortable for you.</li>
@@ -132,10 +139,12 @@ This is the first subsection of my document. I'd love people to be able to find 
 &lt;font size=&quot;5&quot;&gt;My 2nd subheading&lt;/font&gt;
 &lt;br&gt;&lt;br&gt;
 This is the second subsection of my content. I think is more interesting than the last one.</code></pre>
-        <p>If you try our longer version out with a screenreader (see bad-semantics.html), you'll not have a very good experience — the screenreader hasn't got anything to use as signposts, so you can't retrieve a useful table of contents, and the whole page is seen as a single giant block, so it is just read out in one go, all at once.</p>
+        <p>If you try our longer version out with a screenreader (see bad-semantics.html), you'll not have a very good experience — the screenreader hasn't got anything to use as signposts, so you can't retrieve a useful table of contents, and the whole
+          page is seen as a single giant block, so it is just read out in one go, all at once.</p>
         <p>There are other issues too beyond accessibility — it is harder to style the content using CSS, or manipulate it with JavaScript for example, because there are no elements to use as selectors.</p>
         <h3>Using clear language</h3>
-        <p>The language you use can also affect accessibility. In general you should use clear language that is not overly complex, and doesn't use unnecessary jargon or slang terms. This not only benefits people with cognitive or other disabilities; it benefits readers for whom the text is not written in their first language, younger people ... everyone in fact! Apart from this, you should try to avoid using language and characters that don't get read out clearly by the screenreader. For example:</p>
+        <p>The language you use can also affect accessibility. In general you should use clear language that is not overly complex, and doesn't use unnecessary jargon or slang terms. This not only benefits people with cognitive or other disabilities; it
+          benefits readers for whom the text is not written in their first language, younger people ... everyone in fact! Apart from this, you should try to avoid using language and characters that don't get read out clearly by the screenreader. For example:</p>
         <ul>
           <li>Don't use dashes if you can avoid it. Instead of writing 5–7, write 5 to 7.</li>
           <li>Expand abbreviations — instead of writing Jan, write January.</li>
@@ -148,7 +157,8 @@ This is the second subsection of my content. I think is more interesting than th
         <header>
           <h2>Page layouts</h2>
         </header>
-        <p>In the bad old days, people used to create page layouts using HTML tables — using different table cells to contain the header, footer, side bar, main content column, etc. This is not a good idea because a screenreader will likely give out confusing readouts, especially if the layout is complex and has many nested tables.</p>
+        <p>In the bad old days, people used to create page layouts using HTML tables — using different table cells to contain the header, footer, side bar, main content column, etc. This is not a good idea because a screenreader will likely give out confusing
+          readouts, especially if the layout is complex and has many nested tables.</p>
         <p>Try our example <a href="http://mdn.github.io/learning-area/accessibility/html/table-layout.html" target="_blank">table-layout.html</a> example, which looks something like this:</p>
         <pre class="badCode"><code>&lt;table width=&quot;1200&quot;&gt;
       &lt;!-- main heading row --&gt;
@@ -214,9 +224,12 @@ This is the second subsection of my content. I think is more interesting than th
         &lt;/td&gt;
       &lt;/tr&gt;
     &lt;/table&gt;</code></pre>
-        <p>If you try to navigate this using a screenreader, it will probably tell you that there's a table to be looked at (although some screenreaders can guess the difference between table layouts and data tables). You'll then likely (depending on which screenreader you're using) have to go down into the table as an object and look at its features separately, then get out of the table again to carry on navigating the content.</p>
-        <p>Table layouts are a relic of the past — they made sense back when CSS support was not widespread in browsers, but they create confusion for screenreader users, as well as being bad for many other reasons (abuse of tables, arguably requires more markup, make designs more inflexible). Don't do it!</p>
-        <p>You can verify these claims by comparing your previous experience with a <a href="http://mdn.github.io/learning-area/html/introduction-to-html/document_and_website_structure/" target="_blank">more modern website structure example</a>, which could look something like this:</p>
+        <p>If you try to navigate this using a screenreader, it will probably tell you that there's a table to be looked at (although some screenreaders can guess the difference between table layouts and data tables). You'll then likely (depending on which
+          screenreader you're using) have to go down into the table as an object and look at its features separately, then get out of the table again to carry on navigating the content.</p>
+        <p>Table layouts are a relic of the past — they made sense back when CSS support was not widespread in browsers, but they create confusion for screenreader users, as well as being bad for many other reasons (abuse of tables, arguably requires more
+          markup, make designs more inflexible). Don't do it!</p>
+        <p>You can verify these claims by comparing your previous experience with a <a href="http://mdn.github.io/learning-area/html/introduction-to-html/document_and_website_structure/" target="_blank">more modern website structure example</a>, which could
+          look something like this:</p>
         <pre class="goodCode"><code>&lt;header&gt;
   &lt;h1&gt;Header&lt;/h1&gt;
 &lt;/header&gt;
@@ -248,10 +261,14 @@ This is the second subsection of my content. I think is more interesting than th
 &lt;footer&gt;
   &lt;!-- footer content in here --&gt;
 &lt;/footer&gt;</code></pre>
-        <p>If you try our more modern structure example with a screenreader, you'll see that the layout markup no longer gets in the way and confuses the content readout. It is also much leaner and smaller in terms of code size, which means easier to maintain code, and less bandwidth for the user to download (particularly prevalent for those on slow connections).</p>
-        <p>Another consideration when creating layouts is using HTML5 semantic elements as seen in the above example (see content sectioning) — you can create a layout using only nested <code>&lt;div&gt;</code> elements, but it is better to use appropriate sectioning elements to wrap your main navigation (<code>&lt;nav&gt;</code>), footer (<code>&lt;footer&gt;</code>), repeating content units (<code>&lt;article&gt;</code>), etc. These provide extra semantics for screenreaders (and other tools) to give user extra clues about the content they are navigating (see <a href="http://www.weba11y.com/blog/2016/04/22/screen-reader-support-for-new-html5-section-elements/" target="_blank">Screen Reader Support for new HTML5 Section Elements</a> for an idea of what screen reader support is like).</p>
+        <p>If you try our more modern structure example with a screenreader, you'll see that the layout markup no longer gets in the way and confuses the content readout. It is also much leaner and smaller in terms of code size, which means easier to maintain
+          code, and less bandwidth for the user to download (particularly prevalent for those on slow connections).</p>
+        <p>Another consideration when creating layouts is using HTML5 semantic elements as seen in the above example (see content sectioning) — you can create a layout using only nested <code>&lt;div&gt;</code> elements, but it is better to use appropriate
+          sectioning elements to wrap your main navigation (<code>&lt;nav&gt;</code>), footer (<code>&lt;footer&gt;</code>), repeating content units (<code>&lt;article&gt;</code>), etc. These provide extra semantics for screenreaders (and other tools)
+          to give user extra clues about the content they are navigating (see <a href="http://www.weba11y.com/blog/2016/04/22/screen-reader-support-for-new-html5-section-elements/" target="_blank">Screen Reader Support for new HTML5 Section Elements</a> for an idea of what screen reader support is like).</p>
         <div class="note">
-          <p><strong>Note:</strong> As well as your content having good semantics and an attractive layout, it should make logical sense in its source order — you can always place it where you want using CSS later on, but you should get the source order right to start with, so what screenreader users get read out to them will make sense.</p>
+          <p><strong>Note:</strong> As well as your content having good semantics and an attractive layout, it should make logical sense in its source order — you can always place it where you want using CSS later on, but you should get the source order
+            right to start with, so what screenreader users get read out to them will make sense.</p>
         </div>
       </section>
       <hr>
@@ -260,10 +277,14 @@ This is the second subsection of my content. I think is more interesting than th
         <header>
           <h2>UI controls</h2>
         </header>
-        <p>By UI controls, we mean the main parts of web documents that users interact with — most commonly buttons, links, and form controls. In this section we'll look at the basic accessibility concerns to be aware of when creating such controls. Later articles on WAI-ARIA and multimedia will look at other aspects of UI accessibility.</p>
-        <p>One key aspect to the accessibility of UI controls is that by default, browsers allow them to be manipulated by the keyboard. You can try this out using our <a href="http://mdn.github.io/learning-area/tools-testing/cross-browser-testing/accessibility/native-keyboard-accessibility.html" target="_blank">native-keyboard-accessibility.html</a> example (see the <a href="https://github.com/mdn/learning-area/blob/master/tools-testing/cross-browser-testing/accessibility/native-keyboard-accessibility.html" target="_blank">source code</a>) — open this in a new tab, and try pressing the tab key; after a few presses, you should see the tab focus start to move through the different focusable elements; the focused elements are given a highlighted default style in every browser (it differs slightly between different browsers) so that you can tell what element is focused.</p>
-        <img src="https://mdn.mozillademos.org/files/14215/button-focused-unfocused.png">
-        <p>You can then press Enter/Return to follow a focused link or press a button (we've included some JavaScript to make the buttons alert a message), or start typing to enter text in a text input (other form elements have different controls, for example the <code>&lt;select&gt;</code> element can have its options displayed and cycled between using the up and down arrow keys).</p>
+        <p>By UI controls, we mean the main parts of web documents that users interact with — most commonly buttons, links, and form controls. In this section we'll look at the basic accessibility concerns to be aware of when creating such controls. Later
+          articles on WAI-ARIA and multimedia will look at other aspects of UI accessibility.</p>
+        <p>One key aspect to the accessibility of UI controls is that by default, browsers allow them to be manipulated by the keyboard. You can try this out using our <a href="http://mdn.github.io/learning-area/tools-testing/cross-browser-testing/accessibility/native-keyboard-accessibility.html" target="_blank">native-keyboard-accessibility.html</a> example (see the <a href="https://github.com/mdn/learning-area/blob/master/tools-testing/cross-browser-testing/accessibility/native-keyboard-accessibility.html" target="_blank">source code</a>)
+          — open this in a new tab, and try pressing the tab key; after a few presses, you should see the tab focus start to move through the different focusable elements; the focused elements are given a highlighted default style in every browser (it
+          differs slightly between different browsers) so that you can tell what element is focused.</p>
+        <img alt src="https://mdn.mozillademos.org/files/14215/button-focused-unfocused.png">
+        <p>You can then press Enter/Return to follow a focused link or press a button (we've included some JavaScript to make the buttons alert a message), or start typing to enter text in a text input (other form elements have different controls, for example
+          the <code>&lt;select&gt;</code> element can have its options displayed and cycled between using the up and down arrow keys).</p>
         <div class="note">
           <p><strong>Note:</strong> Different browsers may have different keyboard control options available. See Using native keyboard accessibility for more details.</p>
         </div>
@@ -316,11 +337,15 @@ This is the second subsection of my content. I think is more interesting than th
           <h2>Building keyboard accessibility back in</h2>
         </header>
         <!-- <h3>Building keyboard accessibility back in</h3> -->
-        <p>Adding such advantages back in takes a bit of work (you can an example code in our <a href="http://mdn.github.io/learning-area/tools-testing/cross-browser-testing/accessibility/fake-div-buttons.html" target="_blank">fake-div-buttons.html</a> example — also see the <a href="https://github.com/mdn/learning-area/blob/master/tools-testing/cross-browser-testing/accessibility/fake-div-buttons.html" target="_blank">source code</a>). Here we've given our fake <code>&lt;div&gt;</code> buttons the ability to be focused (including via tab) by giving each one the attribute <code>tabindex="0"</code>:</p>
+        <p>Adding such advantages back in takes a bit of work (you can an example code in our <a href="http://mdn.github.io/learning-area/tools-testing/cross-browser-testing/accessibility/fake-div-buttons.html" target="_blank">fake-div-buttons.html</a> example
+          — also see the <a href="https://github.com/mdn/learning-area/blob/master/tools-testing/cross-browser-testing/accessibility/fake-div-buttons.html" target="_blank">source code</a>). Here we've given our fake <code>&lt;div&gt;</code> buttons the
+          ability to be focused (including via tab) by giving each one the attribute <code>tabindex="0"</code>:</p>
         <pre><code>&lt;div data-message=&quot;This is from the first button&quot; tabindex=&quot;0&quot;&gt;Click me!&lt;/div&gt;
 &lt;div data-message=&quot;This is from the second button&quot; tabindex=&quot;0&quot;&gt;Click me too!&lt;/div&gt;
 &lt;div data-message=&quot;This is from the third button&quot; tabindex=&quot;0&quot;&gt;And me!&lt;/div&gt;</code></pre>
-        <p>Basically, the <code>tabindex</code> attribute is primarily intended to allow tabbable elements to have a custom tab order (specified in positive numerical order), instead of just being tabbed through in their default source order. This is nearly always a bad idea, as it can cause major confusion. Use it only if you really need to, for example if the layout shows things in a very different visual order to the source code, and you want to make things work more logically. There are two other options for <code>tabindex</code>:</p>
+        <p>Basically, the <code>tabindex</code> attribute is primarily intended to allow tabbable elements to have a custom tab order (specified in positive numerical order), instead of just being tabbed through in their default source order. This is nearly
+          always a bad idea, as it can cause major confusion. Use it only if you really need to, for example if the layout shows things in a very different visual order to the source code, and you want to make things work more logically. There are two
+          other options for <code>tabindex</code>:</p>
         <ul>
           <li><code>tabindex="0"</code> — as indicated above, this value allows elements that are not normally tabbable to become tabbable. This is the most useful value of <code>tabindex</code>.</li>
           <li><code>tabindex="-1"</code> — this allows not normally tabbable elements to receive focus programmatically, e.g. via JavaScript, or as the target of links.</li>
@@ -331,7 +356,8 @@ This is the second subsection of my content. I think is more interesting than th
     document.activeElement.click();
   }
 };</code></pre>
-        <p>Here we add a listener to the document object to detect when a button has been pressed on the keyboard. We check what button was pressed via the event object's <code>keyCode</code> property; if it is the keycode that matches Return/Enter, we run the function stored in the button's onclick handler using <code>document.activeElement.click()</code>. <code>activeElement</code> gives us the element that is currently focused on the page.</p>
+        <p>Here we add a listener to the document object to detect when a button has been pressed on the keyboard. We check what button was pressed via the event object's <code>keyCode</code> property; if it is the keycode that matches Return/Enter, we run
+          the function stored in the button's onclick handler using <code>document.activeElement.click()</code>. <code>activeElement</code> gives us the element that is currently focused on the page.</p>
         <p>This is a lot of extra hassle to build the functionality back in. And there's bound to be other problems with it. <strong>Better to just use the right element for the right job in the first place.</strong></p>
       </section>
       <hr>
@@ -340,34 +366,35 @@ This is the second subsection of my content. I think is more interesting than th
         <header>
           <h2>Meaningful text labels</h2>
         </header>
-      <h3>Meaningful text labels</h3>
-      <p>UI control text labels are very useful to all users, but getting them right is particularly important to users with disabilities.</p>
-      <p>You should make sure that your button and link text labels are understandable and distinctive. Don't just use "Click here" for your labels, as screenreader users sometimes get up a list of buttons and form controls. The following screenshot shows our controls being listed by VoiceOver on Mac.</p>
-      <img src="https://mdn.mozillademos.org/files/14335/voiceover-formcontrols.png">
-      <p>Make sure your labels make sense out of context, read on their own, as well as in the context of the paragraph they are in. For example, the following shows an example of good link text:</p>
-      <pre class="goodCode"><code>&lt;p&gt;Whales are really awesome creatures. &lt;a href=&quot;whales.html&quot;&gt;Find out more about whales&lt;/a&gt;.&lt;/p&gt;</code></pre>
-      <p>but this is bad link text:</p>
-      <pre class="badCode"><code>&lt;p&gt;Whales are really awesome creatures. To find more out about whales, &lt;a href=&quot;whales.html&quot;&gt;click here&lt;/a&gt;.&lt;/p&gt;</code></pre>
-      <div class="note">
-        <p><strong>Note:</strong> You can find a lot more about link implementation and best practices in our <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks" target="_blank">Creating hyperlinks</a> article. You can also see some good and bad examples at <a href="http://mdn.github.io/learning-area/accessibility/html/good-links.html" target="_blank">good-links.html</a> and <a href="http://mdn.github.io/learning-area/accessibility/html/bad-links.html" target="_blank">bad-links.html</a>.</p>
-      </div>
-      <p>Form labels are also important, for giving you a clue what you need to enter into each form input. The following seems like a reasonable enough example:</p>
-      <pre class="badCode"><code>Fill in your name: &lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot;&gt;</code></pre>
-      <p>However, this is not so useful for disabled users. There is nothing in the above example to associate the label unambiguously with the form input, and make it clear how to fill it in if you cannot see it. If you access this with some screenreaders, you may only be given a description along the lines of "edit text".</p>
-      <p>The following is a much better example:</p>
-      <pre class="goodCode"><code>&lt;div&gt;
+        <h3>Meaningful text labels</h3>
+        <p>UI control text labels are very useful to all users, but getting them right is particularly important to users with disabilities.</p>
+        <p>You should make sure that your button and link text labels are understandable and distinctive. Don't just use "Click here" for your labels, as screenreader users sometimes get up a list of buttons and form controls. The following screenshot shows
+          our controls being listed by VoiceOver on Mac.</p>
+        <img alt src="https://mdn.mozillademos.org/files/14335/voiceover-formcontrols.png">
+        <p>Make sure your labels make sense out of context, read on their own, as well as in the context of the paragraph they are in. For example, the following shows an example of good link text:</p>
+        <pre class="goodCode"><code>&lt;p&gt;Whales are really awesome creatures. &lt;a href=&quot;whales.html&quot;&gt;Find out more about whales&lt;/a&gt;.&lt;/p&gt;</code></pre>
+        <p>but this is bad link text:</p>
+        <pre class="badCode"><code>&lt;p&gt;Whales are really awesome creatures. To find more out about whales, &lt;a href=&quot;whales.html&quot;&gt;click here&lt;/a&gt;.&lt;/p&gt;</code></pre>
+        <div class="note">
+          <p><strong>Note:</strong> You can find a lot more about link implementation and best practices in our <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks" target="_blank">Creating hyperlinks</a> article. You can also see some good and bad examples at <a href="http://mdn.github.io/learning-area/accessibility/html/good-links.html" target="_blank">good-links.html</a> and <a href="http://mdn.github.io/learning-area/accessibility/html/bad-links.html" target="_blank">bad-links.html</a>.</p>
+        </div>
+        <p>Form labels are also important, for giving you a clue what you need to enter into each form input. The following seems like a reasonable enough example:</p>
+        <pre class="badCode"><code>Fill in your name: &lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot;&gt;</code></pre>
+        <p>However, this is not so useful for disabled users. There is nothing in the above example to associate the label unambiguously with the form input, and make it clear how to fill it in if you cannot see it. If you access this with some screenreaders,
+          you may only be given a description along the lines of "edit text".</p>
+        <p>The following is a much better example:</p>
+        <pre class="goodCode"><code>&lt;div&gt;
   &lt;label for=&quot;name&quot;&gt;Fill in your name:&lt;/label&gt;
   &lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot;&gt;
 &lt;/div&gt;</code></pre>
-      <img src="https://mdn.mozillademos.org/files/14337/voiceover-good-form-label.png">
-      <p>As an added bonus, in most browsers associating a label with a form input means that you can click the label to select/activate the form element. This gives the input a bigger hit area, making it easier to select.</p>
-      <div class="note">
-        <p><strong>Note:</strong> you can see some good and bad form examples in <a href="http://mdn.github.io/learning-area/accessibility/html/good-form.html" target="_blank">good-form.html</a> and <a href="http://mdn.github.io/learning-area/accessibility/html/bad-form.html" target="_blank">bad-form.html</a>.
-        </p>
-      </div>
+        <img alt src="https://mdn.mozillademos.org/files/14337/voiceover-good-form-label.png">
+        <p>As an added bonus, in most browsers associating a label with a form input means that you can click the label to select/activate the form element. This gives the input a bigger hit area, making it easier to select.</p>
+        <div class="note">
+          <p><strong>Note:</strong> you can see some good and bad form examples in <a href="http://mdn.github.io/learning-area/accessibility/html/good-form.html" target="_blank">good-form.html</a> and <a href="http://mdn.github.io/learning-area/accessibility/html/bad-form.html" target="_blank">bad-form.html</a>.
+          </p>
+        </div>
       </section>
       <hr>
-
       <!-- reference -->
       <section id="Reference" class="main-section">
         <header>
