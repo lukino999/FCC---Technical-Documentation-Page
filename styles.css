@@ -39,9 +39,6 @@ main {
   padding-bottom: 100px;
 }
 
-main pre {
-  z-index: -1;
-}
 
 #navbar header {
   padding: 16px;
@@ -49,6 +46,7 @@ main pre {
 }
 
 #navbar h1 {
+  padding-top: 5px;
   font-size: 150%;
   font-weight: bolder;
   overflow: hidden;
