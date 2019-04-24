@@ -26,6 +26,7 @@ body {
   margin-left: 0;
   display: flex;
   flex-direction: column;
+  text-align: left;
 }
 
 main {
@@ -50,8 +51,8 @@ main pre {
 #navbar h1 {
   font-size: 150%;
   font-weight: bolder;
-  text-align: left;
   overflow: hidden;
+
 }
 
 #navbar ul {
@@ -72,7 +73,6 @@ main pre {
 }
 
 .nav-link {
-  text-align: left;
   background: var(--color-black);
   color: var(--color-white);
 }
@@ -148,3 +148,28 @@ hr {
   padding-left: 3em;
   background: #aaffff;
 }
+
+@media only screen and (max-width: 900px) {
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+  }
+
+  #navbar li {
+    text-align: center;
+    margin: auto;
+    height: auto;
+    display: list-item;
+    padding: 4px;
+  }
+
+  .nav-link {
+    text-align: center;
+  }
+
+  main {
+    margin: auto;
+  }
+} 
